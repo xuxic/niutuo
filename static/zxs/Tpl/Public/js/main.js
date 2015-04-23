@@ -16,26 +16,26 @@ $(function(){
     })
 	
 	var manifest=[
-		{src:"/zxs/Tpl/Public/images/page0_bg.jpg"},
-		{src:"/zxs/Tpl/Public/images/page00_bg.jpg"},
-    	{src:"/zxs/Tpl/Public/images/page2_bg.jpg"},
-		{src:"/zxs/Tpl/Public/images/page3_bg.jpg"},
-		{src:"/zxs/Tpl/Public/images/page4_bg.jpg"},
-		{src:"/zxs/Tpl/Public/images/page5_bg.jpg"},
-    	{src:"/zxs/Tpl/Public/images/page6_bg.jpg"},
-		{src:"/zxs/Tpl/Public/images/page7_bg.jpg"},
-		{src:"/zxs/Tpl/Public/images/page8_bg.jpg"},
-		{src:"/zxs/Tpl/Public/images/page9_bg.jpg"},
-    	{src:"/zxs/Tpl/Public/images/page10_bg.jpg"},
-		{src:"/zxs/Tpl/Public/images/txt2.png"},
-		{src:"/zxs/Tpl/Public/images/txt3.png"},
-		{src:"/zxs/Tpl/Public/images/txt4.png"},
-		{src:"/zxs/Tpl/Public/images/txt5.png"},
-		{src:"/zxs/Tpl/Public/images/txt6.png"},
-		{src:"/zxs/Tpl/Public/images/txt7.png"},
-		{src:"/zxs/Tpl/Public/images/txt8.png"},
-		{src:"/zxs/Tpl/Public/images/txt9.png"},
-		{src:"/zxs/Tpl/Public/images/txt10.png"}
+		{src:"/niutuo/static/zxs/Tpl/Public/images/page0_bg.jpg"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/page00_bg.jpg"},
+    	{src:"/niutuo/static/zxs/Tpl/Public/images/page2_bg.jpg"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/page3_bg.jpg"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/page4_bg.jpg"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/page5_bg.jpg"},
+    	{src:"/niutuo/static/zxs/Tpl/Public/images/page6_bg.jpg"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/page7_bg.jpg"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/page8_bg.jpg"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/page9_bg.jpg"},
+    	{src:"/niutuo/static/zxs/Tpl/Public/images/page10_bg.jpg"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/txt2.png"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/txt3.png"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/txt4.png"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/txt5.png"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/txt6.png"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/txt7.png"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/txt8.png"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/txt9.png"},
+		{src:"/niutuo/static/zxs/Tpl/Public/images/txt10.png"}
     ]
 
     loader = new createjs.LoadQueue(false);
