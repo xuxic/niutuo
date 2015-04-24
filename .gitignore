@@ -1,2 +1,3 @@
 .vagrant
 *.mp3
+*.pyc

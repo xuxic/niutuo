@@ -13,10 +13,10 @@ $(function(){
             $(this).css({top:stageH,left:0});
         }
 
-    })
+    });
 	
 	var manifest=[
-		{src:"/niutuo/static/zxs/Tpl/Public/images/page0_bg.jpg"},
+		{src:"Tpl/Public/images/page0_bg.jpg"},
 		{src:"/niutuo/static/zxs/Tpl/Public/images/page00_bg.jpg"},
     	{src:"/niutuo/static/zxs/Tpl/Public/images/page2_bg.jpg"},
 		{src:"/niutuo/static/zxs/Tpl/Public/images/page3_bg.jpg"},
@@ -36,7 +36,7 @@ $(function(){
 		{src:"/niutuo/static/zxs/Tpl/Public/images/txt8.png"},
 		{src:"/niutuo/static/zxs/Tpl/Public/images/txt9.png"},
 		{src:"/niutuo/static/zxs/Tpl/Public/images/txt10.png"}
-    ]
+    ];
 
     loader = new createjs.LoadQueue(false);
     loader.addEventListener("complete", handleOverallComplete);
@@ -85,24 +85,24 @@ $(function(){
 			$(".intro").hide();
 			allowMove = true;	
 			$(".guideTop").show();
-		}})
-	})
+		}});
+	});
 	$(".clickImg").on("touchend",function (){
 		if(!isGray)
 		{
-			TweenMax.to($(".img1"),2,{width:100})
+			TweenMax.to($(".img1"),2,{width:100});
 		}
-	})
+	});
 	
     $(".bgSoundImg").click(function(){
         if($(".bgSoundImg").hasClass("musicPlay")){
-            $(".bgSoundImg").removeClass("musicPlay")
+            $(".bgSoundImg").removeClass("musicPlay");
             document.getElementById("bgSound").pause();
         }else{
-            $(".bgSoundImg").addClass("musicPlay")
+            $(".bgSoundImg").addClass("musicPlay");
             document.getElementById("bgSound").play();
         }
-    })
+    });
 
 
 
@@ -122,7 +122,7 @@ $(function(){
                     if(isUp && isLR) {
                         if(pageNum!=(pageSum-1)) {
                             allowMove = false;
-                            TweenLite.to($(".page-move").eq(pageNum), 0.6, {scale: 0.2})
+                            TweenLite.to($(".page-move").eq(pageNum), 0.6, {scale: 0.2});
                             TweenLite.to($(".page-move").eq(nextPageNum), 0.6, {top: 0, onComplete: function () {
                                 $(".page-move").eq(pageNum).hide();
                                 if (pageNum < pageSum - 1) {
@@ -135,7 +135,7 @@ $(function(){
 									
                                 }
                                 allowMove = true;
-                            }})
+                            }});
                         }else{
                             //$(".weixin-guide").show();
                             $(".guideTop").hide();
@@ -146,9 +146,9 @@ $(function(){
 
                         if(pageNum>0) {
                             allowMove = false;
-                            TweenLite.to($(".page-move").eq(pageNum), 0.6, {scale: 0.2})
+                            TweenLite.to($(".page-move").eq(pageNum), 0.6, {scale: 0.2});
                             TweenLite.to($(".page-move").eq(nextPageNum), 0.6, {top: 0, onComplete: function () {
-                                $(".page-move").eq(pageNum).hide()
+                                $(".page-move").eq(pageNum).hide();
                                 if (pageNum > 0) {
                                     pageNum--;
                                 } else {
@@ -156,7 +156,7 @@ $(function(){
                                 }
 
                                 allowMove = true;
-                            }})
+                            }});
                         }
                     }
                     break;
@@ -211,6 +211,6 @@ $(function(){
 	});
 	$(".weixin-guide").on("click",function (){
 		$(this).hide();	
-	})
+	});
 	
-})
+});
