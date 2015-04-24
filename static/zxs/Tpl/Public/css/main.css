@@ -323,3 +323,24 @@ body {
   background-repeat: repeat-x;
   opacity: 1;
 }
+
+@-webkit-keyframes ppr-animation {
+  0% { left: 100px; top: 200px; }
+  25% { left: 200px; top: 300px; }
+  50% { left: 50px; top: 500px; }
+  75% { left: 400px; top: 100px; }
+  100% { left: 100px; top: 200px; }
+}
+
+.ppr {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 200px;
+  display: block;
+  background-image: url("../images/ppr.png");
+  background-size: 100% 100%;
+  -webkit-animation: ppr-animation 8s infinite linear;
+  opacity: 1;
+}
