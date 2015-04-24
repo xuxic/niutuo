@@ -80,9 +80,10 @@ $(function(){
 	*/
 	
 	$(".clickImg").on("touchstart",function (){
-		TweenMax.to($(".img1"),4,{width:500,onComplete:function (){
+		TweenMax.to($(".img1"),1,{width:"500px",height:"500px",top:"20%",left:"30%",onComplete:function (){
 			isGray = true;
 			$(".intro").hide();
+			$(".img1").hide();
 			allowMove = true;	
 			$(".guideTop").show();
 		}});
@@ -90,7 +91,7 @@ $(function(){
 	$(".clickImg").on("touchend",function (){
 		if(!isGray)
 		{
-			TweenMax.to($(".img1"),2,{width:100});
+			TweenMax.to($(".img1"),2,{width:"164px",height:"164px",top:"50%",left:"40%"});
 		}
 	});
 	
