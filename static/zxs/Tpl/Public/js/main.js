@@ -16,7 +16,6 @@ $(function(){
     });
 	
 	var manifest=[
-		{src:"Tpl/Public/images/page0_bg.jpg"},
 		{src:"Tpl/Public/images/page00_bg.jpg"},
     	{src:"Tpl/Public/images/page2_bg.jpg"},
 		{src:"Tpl/Public/images/page3_bg.jpg"},
