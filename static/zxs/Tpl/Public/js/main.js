@@ -71,22 +71,6 @@ $(function(){
     }
 
 	var isGray = false;
-	/*
-	$(".clickImg").on("touchstart",function (){
-		TweenMax.to($(".page00"),4,{alpha:0,onComplete:function (){
-			isGray = true;
-			$(".intro").hide();
-			allowMove = true;	
-			$(".guideTop").show();
-		}})
-	})
-	$(".clickImg").on("touchend",function (){
-		if(!isGray)
-		{
-			TweenMax.to($(".page00"),2,{alpha:1})
-		}
-	})
-	*/
 	
 	$(".clickImg").on("touchstart",function (){
 		TweenMax.to($(".img1"),1,{width:"500px",height:"500px",top:"20%",left:"30%",onComplete:function (){
@@ -217,11 +201,19 @@ $(function(){
             }
         }
     });
-	$("#shareBtn").on("click",function (){
-		$(".weixin-guide").show();
+	$(".submit").click(function(){
+		console.log("send msg");
+		if($("#name").val()=="" || $("#tel").val()=="" || $("#gender").val()=="" ){
+			alert("请完整填写姓名，性别，电话后再点击提交");
+			return;
+		} 
+		var msg = {"name":$("#name").val(),"gender":$("#gender").val(),"phone":$("#tel").val()};
+		console.log(msg);
+		url = "/signup?name="+$("#name").val()+"&"+$("#gender").val()+"&"+$("#tel").val()
+		$.post(url,msg,
+		function(data,status){
+			//alert(status);
+			alert("恭喜你，提交成功");
+		}, "json");
 	});
-	$(".weixin-guide").on("click",function (){
-		$(this).hide();	
-	});
-	
 });

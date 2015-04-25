@@ -209,6 +209,7 @@ body {
 .name_txt{position:absolute; width:220px; height:40px;font-size:30px;z-index:100; margin-left:150px; margin-top:110px; left:0%; top:50%;}
 .gender_txt{position:absolute; width:220px; height:40px;font-size:30px;z-index:100; margin-left:150px; margin-top:170px; left:0%; top:50%;}
 .tel_txt{position:absolute; width:220px; height:40px;font-size:30px;z-index:100; margin-left:150px; margin-top:230px; left:0%; top:50%;}
+.submit{position:absolute; width:220px; height:40px;font-size:30px;z-index:100; margin-left:150px; margin-top:280px; left:0%; top:50%;}
 
 .logo2{width:144px; height:43px; background:url(../images/logo.png) no-repeat center center; position:absolute; left:14px; top:14px;}
 
