@@ -6,9 +6,11 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 import web
+from web.httpserver import StaticMiddleware
     
 urls = ("/signup", "signup")
 app = web.application(urls, globals())
+application = app.wsgifunc(StaticMiddleware)
 
 class signup:
     def GET(self):
