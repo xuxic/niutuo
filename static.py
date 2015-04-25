@@ -20,7 +20,7 @@ class signup:
         print i.name.encode('utf8')
         print i.gender.encode('utf8')
         print i.phone.encode('utf8')
-        output = open('output.csv','a')
+        output = open('static/output.csv','a')
         fcntl.flock(output, fcntl.LOCK_EX)
         output.write(i.name+','+i.gender+','+i.phone+'\n')
         output.flush()
