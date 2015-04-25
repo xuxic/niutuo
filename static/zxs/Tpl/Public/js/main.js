@@ -87,7 +87,6 @@ $(function(){
 			isGray = true;
 			$(".intro").hide();
 			$(".img1").hide();
-			$(".txt1").hide();
 			$(".ppr").show();
 			allowMove = true;	
 			$(".guideTop").show();
