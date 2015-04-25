@@ -40,10 +40,15 @@ $(function(){
 		{src:"Tpl/Public/images/txt4.png"},
 		{src:"Tpl/Public/images/txt4a.png"},
 		{src:"Tpl/Public/images/txt5.png"},
+		{src:"Tpl/Public/images/txt5a.png"},
 		{src:"Tpl/Public/images/txt6.png"},
+		{src:"Tpl/Public/images/txt6a.png"},
 		{src:"Tpl/Public/images/txt7.png"},
+		{src:"Tpl/Public/images/txt7a.png"},
 		{src:"Tpl/Public/images/txt8.png"},
+		{src:"Tpl/Public/images/txt8a.png"},
 		{src:"Tpl/Public/images/txt9.png"},
+		{src:"Tpl/Public/images/txt9a.png"},
 		{src:"Tpl/Public/images/txt10.png"}
     ];
 
@@ -78,6 +83,10 @@ $(function(){
 			$(".intro").hide();
 			$(".img1").hide();
 			$(".ppr").show();
+			$(".ppr2").show();
+			$(".ppr3").show();
+			$(".ppr4").show();
+			$(".ppr5").show();
 			allowMove = true;	
 			$(".guideTop").show();
 		}});
