@@ -19,6 +19,7 @@ $(function(){
 		{src:"Tpl/Public/images/wave1.png"},
 		{src:"Tpl/Public/images/wave2.png"},
 		{src:"Tpl/Public/images/wave3.png"},
+		{src:"Tpl/Public/images/wave4.png"},
 		{src:"Tpl/Public/images/page00_bg.jpg"},
     	{src:"Tpl/Public/images/page2_bg.jpg"},
 		{src:"Tpl/Public/images/page3_bg.jpg"},
@@ -86,6 +87,8 @@ $(function(){
 			isGray = true;
 			$(".intro").hide();
 			$(".img1").hide();
+			$(".txt1").hide();
+			$(".ppr").show();
 			allowMove = true;	
 			$(".guideTop").show();
 		}});
